@@ -1,0 +1,218 @@
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+html, body {
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+
+
+/* Box containing Startup and Blog Nav */
+.siteheader {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-bottom: 5px solid yellow;
+  padding: 10px 30px;
+  font-family: 'Merriweather', serif;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+
+
+}
+
+
+/* Startup Matchmaker on top left side  */
+.sitelogo {
+  flex-direction: nowrap;
+  color: yellow;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.firsttwo {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+
+}
+
+.secondaryitems {
+  font-family: 'Lato', sans-serif;
+
+}
+
+/* 6 nav points on top right of webpage */
+.topnav {
+  /* display: flex;
+  width: 100%;
+  align-items: center; */
+}
+
+
+.topnav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding: 5px 0;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  
+
+}
+
+.topnav ul li {
+  padding-left: 15px;
+}
+
+/* Body area */
+
+
+.hwkbanner {
+  background-color:#adadad;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.hwkbanner p{
+  font-size: 28px;
+  margin: 0;
+
+
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 3px solid #f2ff00;
+  /* text-decoration: underline;
+  text-decoration-color: yellow; */
+}
+
+.background {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Lato', sans-serif;
+  min-height: 60%;
+
+
+}
+
+.background {
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  min-height: 60%;
+  /* justify-content: flex-end;
+  align-items: center; */
+  font-family: 'Lato', sans-serif;
+}
+
+.bodybox {
+  background-color: rgba(255,255,255,0.9);
+  margin: 25px 25px 25px 0;
+  width: 380px;
+  height: 230px;
+  padding: 4%;
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.body-blockbutton{
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+}
+
+
+/* Main button that will be used for footer */
+.blockbutton {
+  border-radius: 5px;
+  color: #000;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+
+
+}
+
+/* Footer Area */
+
+.footervisibleboxes {
+  display: flex;
+  font-family: 'Merriweather', serif;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.third-boxes{
+  border-right: 1px solid lightgray;
+  margin: 10px 0;
+  padding: 1%;
+}
+
+
+.third-boxes .blockbutton{
+  background-color: #adadad;
+  border-bottom: 2px solid #878787;
+}
+
+.bottombanner {
+  background-color: #000;
+  padding: 15px 25px;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Fonts, classes are so I can reuse the styles on a variety of elements */
+.merriweather { font-family: 'Merriweather', serif; }
+      .oswald { font-family: 'Oswald', sans-serif; }
+        .lato { font-family: 'Lato', sans-serif; }
+
+/* Colors */
+/* Dark yellow: #f2ff00 */
+/* Lighter yellow: #ffd900 */
+/* Light gray: #adadad */
+/* Medium gray: #878787 */
+
+/* Background Image */
+/* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+/* border radius */

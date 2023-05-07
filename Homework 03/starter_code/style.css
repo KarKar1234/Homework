@@ -1,0 +1,67 @@
+/* ### Colors
+Green: #20c063 / RGBA(32,192,99,1)
+Gray: #e8e9ea  / RGBA (232,233,234,1)
+Dark Text: #3b4144 / RGBA (59,65,68,1) */
+
+
+/* Header Area */
+
+.truPageHeader {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    background-color: green;
+    align-items: center;
+
+
+}
+
+.truPageHeader img{
+    width: 80px;
+    margin-left: 15px;
+  }
+
+.truPageHeader > nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.truPageHeaderList{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    gap: 630px;
+    padding-left: 15px;
+}
+
+.firstfour{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+
+}
+
+
+.last3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+/* GridLayout */
+.truGridLayoutbackground{
+    display: grid;
+    
+}
+
+.truGridLayout{
+    display:grid;
+    margin-bottom: 10px;
+    gap:10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
