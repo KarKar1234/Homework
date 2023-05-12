@@ -2,43 +2,63 @@
 Green: #20c063 / RGBA(32,192,99,1)
 Gray: #e8e9ea  / RGBA (232,233,234,1)
 Dark Text: #3b4144 / RGBA (59,65,68,1) */
-
+ body{
+    margin: 0px;
+    font-family: Lato, sans-serif;
+}
 
 /* Header Area */
 
 .truPageHeader {
     display: grid;
     grid-template-columns: 100px 1fr;
-    background-color: green;
+    background-color: #32b64c;
     align-items: center;
-
-
+    height: 40px;
 }
 
 .truPageHeader img{
     width: 80px;
     margin-left: 15px;
+    margin-bottom: 5px;
   }
 
-.truPageHeader > nav{
+/* .truPageHeader > nav{
     display: flex;
     align-items: center;
 
-}
+
+} */
 
 .truPageHeaderList{
     display: flex;
     flex-direction: row;
-    list-style: none;
+    
     align-items: center;
-    gap: 630px;
-    padding-left: 15px;
+    /* gap: 630px; */
+    padding-left: 0px;
+    justify-content: space-between;
+
 }
+
+/* add a:visited to make sure the links don't turn blue after clicked on */
+.truPageHeaderList a,
+.truPageHeaderList a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
 
 .firstfour{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    list-style: none;
+    /* text-transform: none; */
+
+
+
 
 
 }
@@ -48,20 +68,311 @@ Dark Text: #3b4144 / RGBA (59,65,68,1) */
     display: flex;
     flex-direction: row;
     gap: 20px;
+    list-style: none;
+    padding: 0px;
+    padding-right: 20px;
 
+
+}
+
+/* Banner Below Header */
+.truBanner {
+    display: flex;
+    font-size: 14px;
+    padding-top: 15px;
+    align-items: baseline;
+}
+
+.truBanner p{
+    padding-left: 15px;
+}
+
+.truBanner h2{
+    font-size: 14px;
+    padding-left: 30px;
 }
 
 /* GridLayout */
 .truGridLayoutbackground{
     display: grid;
+    background-color: #e8e9ea;
+    padding: 15px 15px;
     
 }
+
+.trulia-grid-item{
+    background-color: white;
+    font-size: 14px;
+    padding-bottom: 18px;
+}
+
+
 
 .truGridLayout{
     display:grid;
     margin-bottom: 10px;
     gap:10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;    
 }
 
+.trulia-house-facts{
+    list-style: none;
+    padding-left: 7px;
+    margin: 3px 0px 3px 0px;
+}
+
+.trulia-house-price > h1{
+    margin-top: 3px;
+    margin-bottom: 2px;
+
+
+}
+
+.trulia-house-stats > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+.trulia-house-beds > img{
+    width: 15px;
+    height: 15px;
+
+}    
+
+.trulia-house-baths > img{
+    width: 15px;
+    height: 15px;
+
+}    
+
+
+.trulia-house-image{
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.trulia-house-address {
+    color: #787d81;
+}
+
+.new-box{
+    background-color: rgba(45, 191, 102, .70);
+    width: 33px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0px 3px;
+
+}
+
+.new-box-owner {
+    background-color: rgba(134, 144, 152, 0.45);
+    width: 110px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0px 3px;
+    font-size: 12px;
+
+}
+
+/* cover means whole image is in the box */
+
+/* House Images */
+
+.trulia-house-image-1 {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg);
+  }
+
+.trulia-house-image-2{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg);
+
+
+}
+
+.trulia-house-image-3{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg);
+
+
+}
+
+.trulia-house-image-4{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg);
+
+
+}
+
+.trulia-house-image-5{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg);
+
+
+}
+
+.trulia-house-image-6{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-6.jpg);
+
+
+}
+
+.trulia-house-image-7{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-7.jpg);
+
+
+}
+
+.trulia-house-image-8{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-8.jpg);
+
+
+}
+
+.trulia-house-image-9{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-09.jpg);
+
+
+}
+
+.trulia-house-image-10{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-10.jpg);
+
+
+}
+
+.trulia-house-image-11{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-11.jpg);
+
+
+}
+
+.trulia-house-image-12{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-12.jpg);
+
+
+}
+
+
+/* Bottom part of the page */
+
+.trulia-bottom-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+   min-height: 130px;
+    
+}
+
+.trulia-bottom-section a,
+.trulia-bottom-section a:visited{
+    text-decoration: none;
+    color: #3a8e52;
+}
+
+/* .trulia-bottom-section > aside > p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}  */
+
+.numberrow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.resultsrow {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+
+
+}
+
+.locationrow{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    
+}
+
+
+
+
+.bottom-section-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+
+
+}
+
+.bottom-section-text aside {
+    padding: 0px 10px 10px 0px;
+    margin-right: 90px;
+}
+
+
+/* .bottomtext{
+    margin-bottom: 30px;
+    
+} */
+
+.bottom-section-text a{
+    text-decoration: none;
+    color: #3a8e52;
+}
+
+
+/* Footer */
+
+.footer-banner{
+    background-color: #474e52;
+    padding: 7px;
+}
+
+.footer > .footer-banner > .banner-list-items{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding-left: 0px;
+    padding-top: 5px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.footer-banner-bottom-text {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: #787d81;
+
+}
