@@ -188,13 +188,6 @@ a:hover {
   line-height: 135%;
 }
 
-@media screen and (min-width:761px) {
-  .btn_hero {
-    width: 200px;
-  }
-}
-
-
 @media screen and (min-width:761px) and (max-width: 1220px) {
   .hero_callout {
     padding-left: 20px;
